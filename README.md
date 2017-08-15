@@ -1,0 +1,8 @@
+# fixXIBOpenedInXcode8
+处理Xcode8打开后的xib在Xcode7下编译报错的脚本
+0.Xcode8不能很好支持html5混合项目调试，必须在Xcode7下调试，最新的个推需要UserNotifications.framework支持，
+  但UserNotifications.framework需要Xcode8支持。
+1.有时候需要同时在Xcode8和Xcode7下同时编译和调试项目。
+2.用Xcode8打开xib文件后用Xcode7编译会报错。
+3.用Xcode7编译项目前执行fixXIBOpenedInXcode8.sh脚本对被Xcode8打开过的xib文件做处理。
+4.如果依然报错需用Xcode8打开此xib文件并选择兼容Xcode7。
